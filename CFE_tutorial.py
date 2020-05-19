@@ -93,3 +93,13 @@ python manage.py createsuperuser
 # or you can add null=True, which allows the field in previous objects to be blank
 # It checks against what's in 0001_initial.py
 # If you try to make migration with a new field and choose option 1, you can pick a default. This makes a new 0002_product_featured.py
+
+
+##### URL #####
+# Think of views.py as the doc that handles web pages
+
+
+# Make a new app called pages and add it into settings.py own apps
+python manage.py startapp pages
+# So make the homepage view by opening /pages/views.py, make sure its the correct app folder!
+# Import the view you just made into urls.py

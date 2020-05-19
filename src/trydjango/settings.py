@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Third party apps
 
     # My apps, by folder name
+    'pages',
     'products',
 ]
 
@@ -62,7 +63,7 @@ ROOT_URLCONF = 'trydjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")], # this is instead of putting the actual path to the folder in for transferability
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
